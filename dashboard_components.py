@@ -74,7 +74,23 @@ def style() -> None:
     [data-testid="stSelectbox"] [data-baseweb="select"] > div { background:#FFFFFF; color:#172B46; border-color:#D5DEEB; border-radius:10px; min-height:46px; }
     [data-testid="stCaptionContainer"] p { color:#697B92; font-size:.8rem; }
     [data-testid="stExpander"] { background:#fff; border:1px solid #E1E7EF; border-radius:12px; color:#172B46; }
-    [data-testid="stExpander"] summary { color:#172B46; }
+    [data-testid="stExpander"] details { background:#FFFFFF; border-radius:12px; }
+    [data-testid="stExpander"] summary,
+    [data-testid="stExpander"] summary:hover,
+    [data-testid="stExpander"] summary:active,
+    [data-testid="stExpander"] summary:focus,
+    [data-testid="stExpander"] details[open] > summary {
+        background-color:#F0F4FA !important;
+        color:#172B46 !important;
+        border-radius:10px;
+    }
+    [data-testid="stExpander"] summary p,
+    [data-testid="stExpander"] summary span,
+    [data-testid="stExpander"] summary svg { color:#172B46 !important; }
+    [data-testid="stExpander"] summary:focus-visible {
+        outline:2px solid #2874D9;
+        outline-offset:-2px;
+    }
     .st-key-methodology-rossmann, .st-key-methodology-walmart { background:#FFFFFF; border:1px solid #E1E7EF; border-radius:16px; padding:26px; margin-top:20px; }
     .st-key-methodology-rossmann h3, .st-key-methodology-walmart h3 { font-size:1.15rem; letter-spacing:-.02em; }
     [data-testid="stAlert"] { background:#EDF3FB; color:#314B70; border-radius:12px; }
