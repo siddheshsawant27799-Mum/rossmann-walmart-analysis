@@ -126,6 +126,12 @@ def bottom_section(method: str, interpretation: str, key: str = "methodology") -
         with st.expander("Inventory evidence limitation"):
             st.write(INVENTORY_LIMIT)
         st.caption("Source: Author’s analysis of the Rossmann and Walmart retail forecasting datasets.")
+    st.markdown(
+        '<footer style="text-align:center; color:#526B89; font-size:0.85rem; '
+        'padding:24px 0 8px; margin-top:16px; border-top:1px solid #E1E7EF;">'
+        'Research by Siddhesh Sawant</footer>',
+        unsafe_allow_html=True,
+    )
 
 
 def render_application(default_dataset: str = "Rossmann") -> None:
