@@ -145,7 +145,7 @@ def bottom_section(method: str, interpretation: str, key: str = "methodology") -
     st.markdown(
         '<footer style="text-align:center; color:#526B89; font-size:0.85rem; '
         'padding:24px 0 8px; margin-top:16px; border-top:1px solid #E1E7EF;">'
-        'Research by Siddhesh Sawant</footer>',
+        'Research by Siddhesh Sawant | Student ID: UPLSSAW2</footer>',
         unsafe_allow_html=True,
     )
 
